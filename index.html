@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text to Emoji Encryption/Decryption</title>
+    <link rel="icon" type="image/x-icon" href="&#128512;"><link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="main">
+            <h1 >
+                Text <span><img src="arrow.png" alt="" /></span> Emojis
+            </h1>
+            <div id="endec-div">
+                <h3 id="enc-btn">
+                    <span><i class="gg-lock"></i></span> Encrypt Text
+                </h3>
+                <br />
+                <h3 id="dec-btn">
+                    <span><i class="gg-lock-unlock"></i></span> Decrypt Emojis
+                </h3>
+            </div>
+            <div id="encryption">
+                <h5>Type a message</h5>
+                <textarea placeholder="Enter message here" name="" id="textmsg" cols="30" rows="10"></textarea>
+                <h5>Set a password</h5>
+                <input placeholder="Enter password here" type="password" name="" id="password" />
+                <button id="encrypt-btn">
+                    <span><img src="./tala.png" alt="" /></span>Encrypt Text
+                </button>
+            </div>
+            <div id="decryption">
+                <h5>Encrypted message</h5>
+                <textarea placeholder="Enter encrypted message here" name="" id="emojimsg" cols="30"
+                    rows="10"></textarea>
+                <h5>Type a password</h5>
+                <input placeholder="Enter password here" type="password" name="" id="finalpassword" />
+
+                <button id="decrypt-btn">
+                    <span><img src="./khulatala.png" alt="" /></span>Decrypt Text
+                </button>
+            </div>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
